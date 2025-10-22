@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgb(133, 161, 170);
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+    gap: 60px;
+}
+
+.logo {
+    color: rgb(96, 34, 34);
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(40, 45, 57);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 5px;
+    white-space: nowrap;
+    display: block;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.menu li a br {
+    display: none;
+}
+
+.menu li a:hover {
+    color: rgb(96, 34, 34);
+}
+
+.active {
+    color: rgb(96, 34, 34);
+    border-bottom: 2px solid rgb(96, 34, 34);
+}
+
+.passport-head{
+    margin-top: 20px;
+    color: rgb(40, 45, 57);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.passport-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.passport-image {
+    width: 735px;
+    height: 1031px;
+    background-image: url("паспорт фото.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.passport-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+}
+
+.block1 {
+    position: absolute;
+    top: 117px;
+    left: 170px;
+    font: bold 100% serif;
+}
+
+.block2 {
+    position: absolute;
+    top: 230px;
+    left: 160px;
+    font: bold 100% serif;
+}
+
+.block3 {
+    position: absolute;
+    top: 230px;
+    left: 405px;
+    font: bold 100% serif;
+}
+
+.block4 {
+    position: absolute;
+    top: 570px;
+    left: 305px;
+    font: bold 100% serif;
+}
+
+.block5 {
+    position: absolute;
+    top: 645px;
+    left: 275px;
+    font: bold 100% serif;
+}
+
+.block6 {
+    position: absolute;
+    top: 685px;
+    left: 305px;
+    font: bold 100% serif;
+}
+
+.block7 {
+    position: absolute;
+    top: 720px;
+    left: 275px;
+    font: bold 100% serif;
+}
+
+.block8 {
+    position: absolute;
+    top: 720px;
+    left: 410px;
+    font: bold 100% serif;
+}
+
+.block9 {
+    position: absolute;
+    top: 760px;
+    left: 305px;
+    font: bold 100% serif;
+}
+
+.change-btn {
+    width: 150px;
+    padding: 10px 20px;
+    background-color: #400606;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.change-btn:hover {
+    background-color: #050632;
+}
+
+.DOM_JS {
+    margin: 20px;
+    color: rgb(40, 45, 57);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}

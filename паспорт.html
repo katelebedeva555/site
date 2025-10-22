@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> DOM_JS. Считываем информацию из DOM </title>
+    <link rel="stylesheet" href="style_паспорт.css">
+</head>
+<body>
+    <div id="top"></div>
+    <header>
+        <nav>
+            <div class="logo-container"> 
+                <h1 class="logo">LOOK IDEAS FOR AUTUMN</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Главная страница</a></li>
+                    <li><a href="index2.html">Купить одежду</a></li>
+                    <li><a href="паспорт.html" class="active">Информация о создателе </a></li>
+                    <li><a href="index4.html">Какой стиль вам <br> подойдет больше</br> </a></li>
+                    <li><a href="index3.html">Напишите нам для заказа</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h3 class="passport-head"> Паспорт</h3>
+    <div class="passport-container">
+        <div class="passport-image">
+            <div class="passport-text">
+                <div class="block1">УФМС РОССИИ ПО ГОР. МОСКВЕ<br> ПО БАСМАННОМУ РАЙОНУ </div>
+                <div class="block2"> 20.08.2020</div>
+                <div class="block3"> 770-055</div>
+                <div class="block4"> <span id="surname">ЛЕБЕДЕВА </span> </div>
+                <div class="block5"> <span id="name">ЕКАТЕРИНА </span> </div>
+                <div class="block6"> ПАВЛОВНА </div>
+                <div class="block7"> ЖЕН. </div>
+                <div class="block8"> <span id="year">20.07.2006</span></div>
+                <div class="block9"> ГОР.МОСКВА </div>
+            </div>
+        </div>
+        <button id="for_click" class="change-btn">Изменить на латиницу</button>
+    </div>
+
+        <h3 class="DOM_JS">DOM_JS</h3>
+    <img class="get-passport-image" src="getElement1.JPG" alt="DOM_JS" width="1000"/>  
+    <script src="change.js"></script>
+</body>       
+</html>
+
+

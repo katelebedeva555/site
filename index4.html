@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Решение алгоритмической задачи </title>
+        <link rel="stylesheet" href="style_index4.css">
+    </head>    
+    <body>   
+        <body>
+      <div id="top"></div>
+        <header>
+            <nav>
+                <div class="logo-container"> 
+                    <h1 class="logo">LOOK IDEAS FOR AUTUMN</h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Главная страница</a></li>
+                        <li><a href="index2.html">Купить одежду</a></li>
+                        <li><a href="паспорт.html">Информация о создателе</a></li>
+                        <li><a href="index4.html"class="active">Какой стиль вам <br> подойдет больше</br> </a></li>
+                        <li><a href="index3.html">Напишите нам для заказа</br> </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+<h2 class="task-header"> Решение алгоритмической задачи:</h2>
+<p class="task"> 1003. Можно ли из бревна, имеющего диаметр поперечного сечения D, выпилить квадратный брус шириной A? </p>
+
+ <div class="form-group">
+            <label for="diameter">Введите диаметр бревна (D):</label>
+            <input type="number" name="diameter" id="diameter" required>
+        </div>
+
+        <div class="form-group">
+            <label for="width">Введите ширина бруса (A):</label>
+            <input type="number" name="width" id="width" required>
+        </div>
+
+        <button class="task-button" onclick="calculate()">Проверить возможность</button>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script>
+        function calculate() {
+            const diameter = parseFloat(document.getElementById('diameter').value);
+            const width = parseFloat(document.getElementById('width').value);
+            
+            const maxWidth = diameter / Math.sqrt(2);
+            
+            const resultElement = document.getElementById('result');
+            
+            if (width <= maxWidth) {
+                resultElement.textContent = 
+                    "Да, можно. Максимальная ширина бруса: " +maxWidth;
+               
+            } else {
+                resultElement.textContent =
+                    "Нет, невозможно. Максимальная ширина бруса: " +maxWidth;
+                    
+            }
+        }
+    </script>
